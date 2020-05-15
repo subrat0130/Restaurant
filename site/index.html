@@ -9,12 +9,13 @@
     -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Dragon Chicken China Restro</title>
       <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@562&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/ce1f0c6433.js" crossorigin="anonymous"></script>
+      
 </head>
 <body>
   
@@ -46,9 +47,9 @@
        
 
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul id="nav-list" class="navbar-nav ml-auto ">
+              <ul id="nav-list" class="navbar-nav ml-auto list-group ">
                    
-                 <li id="one" >
+                 <li id="one" class="">
                    <a href="index.html">
                      <span ><i class="fas fa-home" style="font-size: 2em"></i></span>
                      <br class="d-none   d-xl-block"> Home
@@ -56,21 +57,21 @@
                  </li>
 
 
-                 <li id="two">
-                   <a href="menu-categories.html">
+                 <li id="one" class="">
+                   <a href="#" onclick="$dc.loadMenuCategories();">
                      <span ><i class="fas fa-utensils" style="font-size: 2em"></i></span>
                      <br class="d-none   d-xl-block"> Menu
                    </a>
                  </li>
 
-                 <li id="three">
+                 <li id="two">
                  <a href="#">
                    <span><i class="fas fa-info-circle" style="font-size: 2em"></i></span> 
                    <br class="d-none  d-xl-block"> About
                  </a>                 
 
                  </li>
-                 <li id="four">
+                 <li id="three">
                    <a href="#">
                      <span><i class="fas fa-award" style="font-size: 2em"></i><span>
                       <br class="d-none   d-xl-block">Awards</a>
@@ -107,35 +108,7 @@
 <div id="main-content" class="container">
 
 
-    <div class="jumbotron">
-        <!-- <img src="images/jumbotron_450.jpg" alt="Picture of restaurant" class="img-fluid max-width:100% d-block d-sm-none">  -->
-
-    </div>
-
-
-    <div id="home-tiles" class="row"> 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="menu-categories.html"><div id="menu-tile"><span>Menu</span>
-          </div>
-          </a>
-        </div>
-      
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="special.html"><div id="Specials-tile"><span>Specials</span>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <a href="https://goo.gl/maps/ZJuQTcGKidqXNwBfA" target="_blank">
-            <div id="map-tile">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15593.884422124356!2d76.6411467!3d12.2840288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf947b18cc5ad3d88!2sThe%20National%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1587004423728!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-             <span>Map</span>
-            </div>
-          </a>
-        </div>
-
-    </div>  <!-- End of home tile -->
-
+    
    
    </div>  <!-- End of main content -->
 
@@ -176,6 +149,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+     <script src="js/ajax-util.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
